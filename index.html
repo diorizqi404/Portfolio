@@ -31,11 +31,12 @@
   <script src="https://kit.fontawesome.com/20b9ad9e09.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
-<body>
+<body class="bg-white">
 
-  <header class="sticky backdrop-blur-lg h-14 top-0 left-0 w-full flex z-10 border border-b-slate-400">
+  <header class="fixed backdrop-blur-lg h-14 top-0 left-0 w-full flex z-10 border border-b-slate-400">
     <div class="container">
       <div class="flex item-center justify-between relative">
+        <!-- PROFILE PICT -->
         <div class="px-4 py-2 flex items-center">
           <img src="dist/img/profile.webp" alt="profile" class="w-10 h-10 mr-1.5 rounded-full">
           <a href="#" alt="url" class="font-extrabold text-primary block text-xl font-space-grotesk tracking-wider pr-1 pb-0.5">Dio Rizqi</a>
@@ -79,7 +80,7 @@
   </header>
 
   <!-- HERO -->
-  <section id="home" class="pt-1">
+  <section id="home" class="pt-16">
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:w-1/2">
@@ -144,7 +145,7 @@
         <!-- CONTENT -->
         <div class="lg:mt-4 w-full flex flex-wrap justify-between border-slate-200 rounded-lg p-4  transition duration-300 ease-in-out">
           <!-- DIV 1 -->
-          <div class="">
+          <section class="">
             <div class="p-2">
               <h2 class="font-bold text-xl font-space-grotesk text-slate-600">Technologies⚡</h2>
             </div>
@@ -196,9 +197,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
           <!-- DIV 2 -->
-          <div class="">
+          <section class="">
             <div class="p-2">
               <h2 class="text-xl font-bold text-slate-600 font-space-grotesk">Certificates 🎖️</h2>
             </div>
@@ -216,11 +217,10 @@
                 <img src="dist/img/certificates/dicoding-devops.webp" width="256" alt="dicoding dasar devops" class="hover:scale-110 transition duration-300 ease-in-out">
               </div>
             </div>
-            <a href="dist/cert.html" class="mt-2">
+            <a href="https://github.com/diorizqi404/portfolio/tree/master/dist/img/certificates" class="mt-2">
               ✈️ <span class="text-base text-primary font-medium">Show More</span>
             </a>
-          </div>
-        </div>
+          </section>
       </div>
     </div>
   </section>
@@ -230,9 +230,9 @@
     <div class="container">
       <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
-          <h5 class="font-semibold text-2xl text-primary mb-8 font-space-grotesk underline underline-offset-2 decoration-wavy">Portfolio</h5>
+          <!-- <h5 class="font-semibold text-2xl text-primary mb-8 font-space-grotesk underline underline-offset-2 decoration-wavy">Portfolio</h5> -->
           <h2 class="font-bold text-dark text-3xl my-4 font-space-grotesk">My Works 💾</h2>
-          <p class="font-medium text-md text-secondary font-space-grotesk">
+          <p class="font-medium text-lg text-secondary font-space-grotesk">
             I'm still learn programming and like to create new things. Here are some projects I've worked on.
           </p>
         </div>
@@ -311,7 +311,6 @@
           </div>
         </div>
       </div>
-
       <div class="flex justify-center my-4">
         <a href="https://github.com/diorizqi404" target="_blank" class="text-lg font-medium text-primary hover:underline underline-offset-2 decoration-dashed">See all projects on Github</a>
       </div>
@@ -325,7 +324,7 @@
         <!-- TITLE & DESC -->
         <div class="w-full max-w-md lg:mr-8 lg:mb-0 mb-4">
           <h2 class="text-white text-2xl lg:text-4xl font-space-grotesk font-bold">Send Me a Letter 📩</h2>
-          <p class="font-medium text-slate-400">Don't worry, I'm not scary</p>
+          <p class="font-medium text-slate-300">Hold ON! Maybe you need <a href="https://card.dioo.my.id" target="_blank" class="text-primary hover:underline underline-offset-2 decoration-dashed">My Card</a></p>
             <img src="dist/img/japan.gif" alt="Connector Yumi Dream Ver." class="mt-2 rounded-lg">
         </div>
 
@@ -345,7 +344,7 @@
                 </svg>                
               </div>
             </div>
-            <form name="contact" method="POST" data-netlify="true" class="px-4  mt-2 flex flex-col" netlify>
+            <form name="contact" action="https://formspree.io/f/mbjvgvza" method="POST" class="px-4  mt-2 flex flex-col">
               <div class="flex">
                 <span class="text-blue-400 text-base">your@name:~$</span>
                 <input class="bg-transparent px-2 focus:outline-none " type="text" name="name" placeholder="John Doe" required>
@@ -356,36 +355,36 @@
               </div>
               <div class="flex lg:max-w-md max-w-xs">
                 <span class="text-blue-400 text-base">your@msge:~$</span>
-                <textarea name="message" class="bg-transparent px-2 focus:outline-none resize-none" placeholder="Your message here!" rows="6" cols="50" required></textarea>
+                <textarea name="message" class="bg-transparent px-2 focus:outline-none resize-none" placeholder="What you want to say?" rows="6" cols="50" required></textarea>
+              </div>
+              <!-- SEND BUTTON -->
+              <div class="pb-1 flex">
+                <span class="text-blue-400 text-base">submt@btn:~$</span>
+                <span class="font-medium px-2 text-base">==></span>
+                <button class="overflow-hidden flex" type="submit">
+                    <span class="block transition ease-in-out duration-500 text-base font-medium text-white tracking-wider pr-1">Send</span>
+                    <div class="rt-wrapper">
+                      <div class="rt block transition-transform duration-500 ease-in-out text-lg">🚀</div>
+                    </div>
+                  </button>
               </div>
             </form>
-            <!-- SEND BUTTON -->
-            <div class="px-4 pb-1  flex">
-              <span class="text-blue-400 text-base">submt@btn:~$</span>
-              <span class="font-medium px-2 text-base">==></span>
-              <button class="overflow-hidden flex" type="submit">
-                  <span class="block transition ease-in-out duration-500 text-base font-medium text-white tracking-wider pr-1">Send</span>
-                  <div class="rt-wrapper">
-                    <div class="rt block transition-transform duration-500 ease-in-out text-lg">🚀</div>
-                  </div>
-                </button>
-            </div>
           </div>  
           <!-- END TERMINAL -->
         </div>
       </div>
       <div class="flex w-full justify-center mt-10 pt-4 items-center flex-col">
-        <p class="text-white font-medium tracking-wider font-space-grotesk">© 2023 oleh <span class="hover:text-secondary">Dio Rizqi</span></p>
+        <p class="text-white font-medium tracking-wider font-space-grotesk">© 2023 by <span class="hover:text-secondary">Dio Rizqi</span></p>
         <p class="text-white font-medium tracking-wider font-space-grotesk flex">
-          <span class="pr-1">Dibuat dengan</span>
+          <span class="pr-1">Build with</span>
           <img src="dist/img/icons/tailwindcss.svg" alt="tailwind icon" width="16">
-          <span class="text-sky-400 px-1 underline underline-offset-4">Tailwind</span> dan 🍔🧋
+          <span class="text-sky-400 px-1 underline underline-offset-4">Tailwind</span> and 🍔🧋
         </p>
       </div>
     </div>
   </section>
 
-  <a href="#home" class="fixed bottom-4 right-4 z-50 flex h-16 w-16 items-center justify-center -rotate-45 lg:text-3xl text-2xl">
+  <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-16 w-16 items-center justify-center -rotate-45 lg:text-3xl text-2xl" id="to-top">
     🚀
   </a>
 
