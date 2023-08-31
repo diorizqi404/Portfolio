@@ -57,7 +57,3 @@ button:hover span {
   from {transform: translateY(0.1em);}
   to {transform: translateY(-0.1em);}
 }
-
-.carousel {
-  -webkit-overflow-scrolling: touch;
-}
